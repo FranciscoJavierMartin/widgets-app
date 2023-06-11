@@ -20,7 +20,7 @@ class CardsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Cards screen'),
       ),
-      body: _CardsView(),
+      body: const _CardsView(),
     );
   }
 }
@@ -71,7 +71,7 @@ class _CartType1 extends StatelessWidget {
                 onPressed: () {},
               ),
             ),
-            Align(
+            const Align(
               alignment: Alignment.bottomLeft,
               child: Text('label'),
             )
@@ -94,7 +94,7 @@ class _CartType2 extends StatelessWidget {
 
     return Card(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.circular(12)),
+        borderRadius: const BorderRadius.all(Radius.circular(12)),
         side: BorderSide(
           color: colors.outline,
         ),
@@ -161,7 +161,6 @@ class _CartType4 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colors = Theme.of(context).colorScheme;
 
     return Card(
       clipBehavior: Clip.antiAlias,
